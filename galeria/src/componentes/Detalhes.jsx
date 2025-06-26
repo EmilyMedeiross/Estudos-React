@@ -5,8 +5,6 @@ export default function Detalhes({personagem}){
   return null;
 }
 
-    
-    
     return(
         <div className='detalhes'>
             <h2> Detalhes do personagem </h2>
