@@ -1,15 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import ToggleTheme from './componentes/ToggleTheme'
-
+// import AlterColor from './componentes/AlterColor'
+import Login from './componentes/Login'
+import RenderListas from './componentes/RenderListas'
+import Gerenciador from './componentes/Gerenciador'
 function App() {
 
 
   return (
     <>
-      <ToggleTheme/>
+      {/* <ToggleTheme/> */}
+      {/* <Login/> */}
+      {/* <AlterColor/> */}
+      {/* <RenderListas/> */}
+      <Gerenciador/>
         
     </>
   )
