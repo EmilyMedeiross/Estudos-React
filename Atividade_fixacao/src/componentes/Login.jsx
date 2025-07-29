@@ -7,7 +7,7 @@ export default function Login() {
 
   function cadastrarUser(e) {
     e.preventDefault();
-
+    
     const novoUsuario = { name, senha };
     setUsuarios([...usuarios, novoUsuario]); 
 
@@ -25,7 +25,7 @@ export default function Login() {
       <div className="form">
         <h2>Login de  Users</h2>
         <form onSubmit={cadastrarUser} className="form">
-            
+
             <label>
                 <span>Nome: </span>
                 <input type="text" placeholder="Nome" value={name} onChange={(e) => setName(e.target.value)}/>

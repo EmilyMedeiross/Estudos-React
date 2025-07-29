@@ -13,8 +13,7 @@ function App() {
       {/* <Login/> */}
       {/* <AlterColor/> */}
       {/* <RenderListas/> */}
-      <Gerenciador/>
-        
+          
     </>
   )
 }

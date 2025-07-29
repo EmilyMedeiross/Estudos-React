@@ -46,7 +46,7 @@ export default function RenderListas () {
             <th>Lista de Usuários</th>
           </tr>
         </thead>
-
+        
         <tbody className="user-grid">
             {/* Implementando o MAP */}
           {usuarios.map(usuario => (
