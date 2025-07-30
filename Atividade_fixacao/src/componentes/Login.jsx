@@ -19,7 +19,7 @@ export default function Login() {
   useEffect(()=> {
     console.log("Lista de usuários atualizada", usuarios)
   }, [usuarios])
-
+  
   return (
     <>
       <div className="form">
