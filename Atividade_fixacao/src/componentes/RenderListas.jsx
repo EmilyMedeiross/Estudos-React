@@ -15,7 +15,7 @@ export default function RenderListas () {
 
       const data = await response.json();
 
-    //   Implementando o filter 
+    
       const data1 = data.filter(user => user.name.length > 15 );
 
       setUsuarios(data1);
@@ -30,7 +30,7 @@ export default function RenderListas () {
   };
 
   const resgataElementos = () => {
-    fetchUsuarios(); // Chama a função para buscar os dados
+    fetchUsuarios(); 
   };
 
   if (loading) {
@@ -48,7 +48,7 @@ export default function RenderListas () {
         </thead>
         
         <tbody className="user-grid">
-            {/* Implementando o MAP */}
+            
           {usuarios.map(usuario => (
             <tr key={usuario.id}>
               <td>{usuario.name}</td>

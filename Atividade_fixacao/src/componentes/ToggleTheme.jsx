@@ -1,6 +1,6 @@
     import { useState, useEffect } from 'react';
-
-    const ThemeToggle = () => {
+ 
+    export default function ToggleTheme() {
       const [modoEscuro, setModoEscuro] = useState(false);
 
       useEffect(() => {
@@ -11,17 +11,17 @@
         } else {
             document.body.style.backgroundColor = 'white';
             document.documentElement.style.color = 'black';
-              document.documentElement.style.background = 'white'
+            document.documentElement.style.background = 'white'
         }
       }, [modoEscuro]);
 
-      const toggleTheme = () => {
+      const alterarTema  = () => {
         setModoEscuro(!modoEscuro);
       };
 
     return (
         <>
-            <button onClick={toggleTheme}>
+            <button onClick={alterarTema}>
                 {modoEscuro ? 'Modo Escuro' : 'Modo claro'}
             </button>
 
@@ -31,4 +31,5 @@
     );
 };
 
-export default ThemeToggle;
+
+
